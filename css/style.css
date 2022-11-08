@@ -2,8 +2,28 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sen:700");
 .header__container {
-  padding: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  vertical-align: center;
+}
+.menu__link {
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
