@@ -15,7 +15,7 @@
 }
 .header__button {
   display: flex;
-  margin-left: 383px;
+  margin-left: 357px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
@@ -30,15 +30,22 @@
 .header__button svg {
   margin-left: 6px;
 }
-.header__mobile {
-  display: none;
-  width: 25px;
-  height: 25px;
-  background: red;
+@media screen and (max-width: 800px) {
+  .header__button {
+    margin-left: 100px;
+  }
 }
-@media screen and (max-width: 1280px) {
+.header__mobile {
+  display: block;
+  margin-left: 25px;
+}
+@media screen and (max-width: 800px) {
   .header__mobile {
     display: block;
+    margin-left: 25px;
+  }
+  .header__mobile svg path {
+    fill: #F66F4D;
   }
 }
 
@@ -46,7 +53,7 @@
   display: flex;
   margin-left: 72px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 800px) {
   .menu__list {
     display: none;
   }
