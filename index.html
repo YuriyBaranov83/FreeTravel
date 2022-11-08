@@ -6,16 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/reset.css">
    <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/mmenu.css">
    <title>Free Travel</title>
 </head>
 <body>
    <div class="wrapper">
       <header class="header">
          <div class="header__container _container">
+            
             <nav class="header__menu menu">
                <div class="menu__logo">
                   <img src="/img/header/Logo.svg" alt="">
                </div>
+               <a href="#menu" class="header__mobile"></a>
                <ul class="menu__list">
                   <li class="menu__item">
                      <a href="" class="menu__link">Home</a>
@@ -43,5 +46,27 @@
          </div>
       </header>
    </div>
+   <!-- For Mobile -->
+   <nav id="menu">
+      <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="#/">Destinations</a></li>
+          <li><a href="advanced.html">Tours</a></li>
+          <li><a href="onepage.html">Blog</a></li>
+      </ul>
+  </nav>
+   <script src="/js/mmenu.js"></script>
+        <script>
+            new Mmenu(document.querySelector("#menu"));
+
+            document.addEventListener("click", function (evnt) {
+                var anchor = evnt.target.closest('a[href="#/"]');
+                if (anchor) {
+                    alert("Thank you for clicking, but that's a demo link.");
+                    evnt.preventDefault();
+                }
+            });
+        </script>
 </body>
 </html>
