@@ -26,18 +26,13 @@
    background: #FDFEFF;
    box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
    border-radius: 38px;
+  
    
    &__where {
       padding-top: 20px;
       padding-bottom: 18px;
       padding-left: 28px;
-      &::after{
-         content: '';
-         width: 47px;
-         border: 1px solid #EAEAEB;
-         transform: rotate(90deg);
-         color: #EAEAEB;
-      } 
+      
    }
    &__date {
       padding-top: 20px;
@@ -45,12 +40,20 @@
    }
 }
 .where {
+   &::after{
+      content: '';
+      width: 47px;
+      border: 1px solid #EAEAEB;
+      transform: rotate(90deg);
+      color: #EAEAEB;
+   }
    &__title {
       font-weight: 500;
       font-size: 18px;
       line-height: 17px;
       color: #2D3134;
    }
+      
    &__loc {
       font-size: 12px;
       line-height: 12px;
@@ -76,19 +79,4 @@
       position: relative;
    }
 
-   &__first {
-   }
-
-   &__second {
-      position: absolute;
-      top: 0;
-   }
-
-   &__third {
-      position: absolute;
-      top: 0;
-   }
-
-   &__small {
-   }
 }
