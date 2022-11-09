@@ -88,6 +88,72 @@
   color: inherit;
 }
 
+.page {
+  max-width: 577px;
+}
+.page__text {
+  margin-top: 26px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.page__title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 86px;
+  color: #2D3134;
+}
+
+.search {
+  display: flex;
+  max-width: 500px;
+  margin-top: 44px;
+  background: #FDFEFF;
+  box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+  border-radius: 38px;
+}
+.search__where {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 28px;
+}
+.search__date {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.where__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  color: #2D3134;
+}
+.where__loc {
+  font-size: 12px;
+  line-height: 12px;
+  color: #9498A4;
+}
+.where::after {
+  content: "";
+  width: 47px;
+  border: 1px solid #EAEAEB;
+  transform: rotate(90deg);
+  color: #EAEAEB;
+}
+
+.date__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  color: #2D3134;
+}
+.date__calendar {
+  font-size: 12px;
+  line-height: 12px;
+  color: #9498A4;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
