@@ -88,8 +88,13 @@
   color: inherit;
 }
 
+.main {
+  margin: 0;
+}
+
 .page {
-  max-width: 577px;
+  display: flex;
+  justify-content: space-between;
 }
 .page__text {
   margin-top: 26px;
@@ -118,6 +123,13 @@
   padding-bottom: 18px;
   padding-left: 28px;
 }
+.search__where::after {
+  content: "";
+  width: 47px;
+  border: 1px solid #EAEAEB;
+  transform: rotate(90deg);
+  color: #EAEAEB;
+}
 .search__date {
   padding-top: 20px;
   padding-bottom: 18px;
@@ -134,13 +146,6 @@
   line-height: 12px;
   color: #9498A4;
 }
-.where::after {
-  content: "";
-  width: 47px;
-  border: 1px solid #EAEAEB;
-  transform: rotate(90deg);
-  color: #EAEAEB;
-}
 
 .date__title {
   font-weight: 500;
@@ -154,6 +159,17 @@
   color: #9498A4;
 }
 
+.images__big {
+  position: relative;
+}
+.images__second {
+  position: absolute;
+  top: 0;
+}
+.images__third {
+  position: absolute;
+  top: 0;
+}
 body {
   font-weight: 400;
   font-size: 16px;
