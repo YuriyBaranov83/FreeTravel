@@ -287,6 +287,38 @@
   line-height: 26px;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  position: relative;
+}
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards__name {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2D3134;
+}
+.cards__visite {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  padding: 104px 57px;
+  visibility: hidden;
+}
+.cards__visite:hover {
+  visibility: visible;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
