@@ -281,6 +281,11 @@
 .catigories__arrows svg {
   margin-left: 12px;
 }
+.catigories__subtitle {
+  max-width: 370px;
+  margin-top: 24px;
+  line-height: 26px;
+}
 
 body {
   font-weight: 400;
