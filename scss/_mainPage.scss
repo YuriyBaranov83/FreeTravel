@@ -5,14 +5,19 @@
    display: flex;
    justify-content: space-between;
    margin-top: 90px;
-   @media screen and (max-width :768){
+   @media screen and (max-width :768px){
       display: block;
+      margin-top: 40px;
    }
    &__text {
       margin-top: 26px;
       font-size: 18px;
       line-height: 28px;
       max-width: 505px;
+      @media screen and (max-width :768px){
+         margin-top: 10px;
+         max-width: 700px;
+      }
    }
 
    &__title {
@@ -22,6 +27,11 @@
       font-size: 84px;
       line-height: 86px;
       color: #2D3134;
+      @media screen and (max-width :768px){
+         max-width: 768px;
+         font-size: 64px;
+         line-height: 68px;
+      }
    }
 }
 .search {
@@ -32,6 +42,10 @@
    box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
    border-radius: 38px;
    position: relative;
+   @media screen and (max-width :768px){
+      margin-top: 20px;
+      margin-left: 80px;
+   }
 
    
    &__where {
@@ -93,6 +107,10 @@
 }
 .images {
    position: relative;
+   @media screen and (max-width :768px){
+      margin-top: 10px;
+      margin-left:115px;
+   }
    &__mapsvg{
       position: absolute;
       top: 43px;
