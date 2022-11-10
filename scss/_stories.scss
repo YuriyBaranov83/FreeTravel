@@ -5,7 +5,8 @@
    }
 }
 .stories {
-
+   display: flex;
+   justify-content: space-between;
    &__images {
       position: relative;
    }
@@ -81,5 +82,79 @@
       line-height: 12px;
       color: #5B5F62;
       padding: 10px 46px 20px 58px;
+   }
+}
+
+.info {
+   max-width: 538px;
+   margin-top: 110px;
+   &__exp {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      color: #F66F4D;
+   }
+
+   &__ourstor {
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 66px;
+      color: #2D3134;
+      margin-top: 20px;
+   }
+
+   &__text {
+      line-height: 26px;
+      color: #5B5F62;
+      margin-top: 20px;
+   }
+
+   &__blocks {
+      margin-top: 40px;
+   }
+}
+.blocks {
+   display: flex;
+   justify-content: space-between;
+   &__card {
+      margin-top: 40px;
+      max-width: 166px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__count {
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 46px;
+      color: #F66F4D;
+      padding-top: 30px;
+      &:nth-child(1){
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+      &:nth-child(2){
+         padding-left: 30px;
+         padding-right: 30px;
+      }
+      &:nth-child(3){
+         padding-left: 25px;
+         padding-right: 25px;
+      }
+
+   }
+
+   &__text {
+      font-size: 21px;
+      line-height: 29px;
+      color: #939597;
+      max-width: 116px;
+      margin-top: 18px;
+      padding-bottom: 26px;
+      text-align: center;
    }
 }
