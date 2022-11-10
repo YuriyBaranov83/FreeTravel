@@ -10,7 +10,6 @@
       justify-content: space-between;
       
    }
-
    &__text {
       font-weight: 600;
       font-size: 56px;
@@ -18,8 +17,9 @@
       color: #2D3134;
 
    }
-
-
    &__arrows {
+      & svg{
+         margin-left: 12px;
+      }
    }
 }
