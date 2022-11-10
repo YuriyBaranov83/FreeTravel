@@ -560,6 +560,11 @@
   margin-top: 32px;
 }
 
+.popular__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .popular__text {
   font-weight: 600;
   font-size: 56px;
@@ -568,6 +573,10 @@
   color: #2D3134;
   max-width: 400px;
 }
+.popular__arrows svg {
+  margin-left: 15px;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
