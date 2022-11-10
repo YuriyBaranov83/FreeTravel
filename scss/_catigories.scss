@@ -42,9 +42,9 @@
    justify-content: space-between;
    margin-top: 60px;
    position: relative;
-   
    @media screen and (max-width :768px){
-     
+     justify-content: flex-start;
+     margin-top: 0px;
    }
    &__item {
       display: flex;
@@ -53,6 +53,10 @@
       &:hover .cards__visite{
          visibility: visible;
       }
+      @media screen and (max-width :768px){
+         margin-left: 51px;
+         margin-top: 30px;
+       }
       
    }
 
