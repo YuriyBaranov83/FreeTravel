@@ -118,6 +118,7 @@
   background: #FDFEFF;
   box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
   border-radius: 38px;
+  position: relative;
 }
 .search__where {
   padding-top: 20px;
@@ -128,14 +129,12 @@
   padding-top: 20px;
   padding-bottom: 18px;
 }
-
-.where::after {
-  content: "";
-  width: 47px;
-  border: 1px solid #EAEAEB;
-  transform: rotate(90deg);
-  color: #EAEAEB;
+.search__icon {
+  position: absolute;
+  right: 4%;
+  top: 11%;
 }
+
 .where__title {
   font-weight: 500;
   font-size: 18px;
@@ -148,6 +147,21 @@
   color: #9498A4;
 }
 
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 68px;
+}
+.date::before {
+  content: "";
+  width: 47px;
+  border: 1px solid #EAEAEB;
+  transform: rotate(90deg);
+  color: #EAEAEB;
+  position: absolute;
+  left: 150px;
+  top: 35px;
+}
 .date__title {
   font-weight: 500;
   font-size: 18px;
