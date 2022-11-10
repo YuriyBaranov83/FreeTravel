@@ -556,6 +556,18 @@
   text-align: center;
 }
 
+.main__popular {
+  margin-top: 32px;
+}
+
+.popular__text {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+  text-transform: capitalize;
+  color: #2D3134;
+  max-width: 400px;
+}
 body {
   font-weight: 400;
   font-size: 16px;
