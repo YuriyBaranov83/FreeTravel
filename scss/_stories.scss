@@ -99,6 +99,7 @@
    margin-top: 110px;
    @media screen and (max-width :768px){
       margin-top: 10px;
+      max-width: 604px;
    }
    &__exp {
       font-weight: 600;
@@ -137,7 +138,7 @@
    &__blocks {
       margin-top: 40px;
       @media screen and (max-width :768px){
-         margin-top: 5px;
+         margin-top: 0px;
       }
    }
 }
