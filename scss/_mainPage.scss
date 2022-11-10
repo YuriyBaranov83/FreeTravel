@@ -109,7 +109,7 @@
    position: relative;
    @media screen and (max-width :768px){
       margin-top: 10px;
-      margin-left:115px;
+      margin-left:50px;
    }
    &__mapsvg{
       position: absolute;
@@ -120,6 +120,9 @@
       position: absolute;
       right: 0;
       top: 105px;
+      @media screen and (max-width :768px){
+         right: 225px;
+      }
    }
    &__text{
       text-align: center;
