@@ -8,6 +8,7 @@
       margin-top: 26px;
       font-size: 18px;
       line-height: 28px;
+      max-width: 505px;
    }
 
    &__title {
@@ -125,7 +126,6 @@
          font-size: 10.35px;
          line-height: 13px;
          color: #2D3134;
-         
          padding: 6px 5px;
          & svg {
             margin-right: 5px;

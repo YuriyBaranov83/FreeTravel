@@ -100,6 +100,7 @@
   margin-top: 26px;
   font-size: 18px;
   line-height: 28px;
+  max-width: 505px;
 }
 .page__title {
   font-family: "Sen";
