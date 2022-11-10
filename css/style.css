@@ -30,16 +30,11 @@
 .header__button svg {
   margin-left: 6px;
 }
-@media screen and (max-width: 800px) {
-  .header__button {
-    margin-left: 100px;
-  }
-}
 .header__mobile {
   display: none;
   margin-left: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .header__mobile {
     display: block;
     margin-left: 25px;
@@ -53,7 +48,7 @@
   display: flex;
   margin-left: 72px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .menu__list {
     display: none;
   }
@@ -253,4 +248,9 @@ body {
   margin: 0px auto;
   padding: 0 15px;
   box-sizing: content-box;
+}
+@media screen and (max-width: 768) {
+  ._container {
+    width: 768px;
+  }
 }

@@ -27,14 +27,11 @@
       & svg{
          margin-left: 6px;
       }
-      @media screen and (max-width :800px){
-         margin-left: 100px;
-      }
    }
    &__mobile{
       display: none;
       margin-left: 25px;
-      @media screen and (max-width :800px){
+      @media screen and (max-width :768px){
          display: block;
          margin-left: 25px;
          & svg path{
@@ -47,7 +44,7 @@
    &__list {
       display: flex;
       margin-left: 72px;
-      @media screen and (max-width :800px){
+      @media screen and (max-width :768px){
          display: none;
       }
    }
