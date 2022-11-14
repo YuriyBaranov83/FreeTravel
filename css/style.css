@@ -573,14 +573,32 @@
   color: #2D3134;
   max-width: 400px;
 }
+@media screen and (max-width: 768px) {
+  .popular__text {
+    text-align: center;
+    margin-left: 170px;
+  }
+}
 .popular__arrows svg {
   margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .popular__arrows {
+    display: none;
+  }
 }
 
 .places {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .places {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .places__item {
   background: #FAF8ED;
@@ -590,6 +608,11 @@
 }
 .places__item_rome {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .places__item_rome {
+    display: block;
+  }
 }
 .places__img {
   padding: 12px 12px 0 12px;

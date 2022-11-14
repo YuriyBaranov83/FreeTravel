@@ -19,11 +19,18 @@
       text-transform: capitalize;
       color: #2D3134;
       max-width: 400px;
+      @media screen and (max-width :768px){
+         text-align: center;
+         margin-left: 170px;
+      }
    }
 
    &__arrows {
       & svg{
          margin-left: 15px;
+      }
+      @media screen and (max-width :768px){
+         display: none;
       }
    }
 }
@@ -33,6 +40,11 @@
    display: flex;
    justify-content: space-between;
    margin-top: 35px;
+   @media screen and (max-width :768px){
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
    
    &__item{
       background: #FAF8ED;
@@ -41,6 +53,9 @@
       border-radius: 16px;
       &_rome{
          display: none;
+         @media screen and (max-width :768px){
+            display: block;
+         }
       }
    }
 
