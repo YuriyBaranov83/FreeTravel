@@ -659,6 +659,42 @@
   margin-top: 36px;
 }
 
+.top__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top__maintitle {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+  color: #2D3134;
+}
+.top__subtitle {
+  line-height: 16px;
+  margin-top: 16px;
+}
+.top__buttons {
+  margin-top: 28px;
+}
+.top__buttons button {
+  border: 1px solid #3D3D3D;
+  border-radius: 30px;
+  background-color: #FAF8ED;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #2D3134;
+  padding: 10px 20px;
+}
+.top__buttons button:not(:first-child) {
+  margin-left: 14px;
+}
+.top__buttons button:hover {
+  background: #2D3134;
+  color: #FFFFFF;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
