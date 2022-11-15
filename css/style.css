@@ -926,11 +926,15 @@
 }
 .logos__networks {
   margin-top: 40px;
+  display: flex;
 }
-.logos__networks:hover svg path {
+.logos__network:not(:first-child) {
+  margin-left: 16px;
+}
+.logos__network:hover svg path {
   fill: #F66F4D;
 }
-.logos__networks:hover svg circle {
+.logos__network:hover svg circle {
   stroke: #F66F4D;
 }
 

@@ -24,6 +24,13 @@
 
    &__networks {
       margin-top: 40px;
+      display: flex;
+      
+   }
+   &__network{
+      &:not(:first-child){
+         margin-left: 16px;
+      }
       &:hover svg path {
          fill: #F66F4D;
       } 
@@ -31,4 +38,5 @@
          stroke: #F66F4D;
       } 
    }
+
 }
