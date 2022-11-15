@@ -882,6 +882,14 @@
   margin-top: 40px;
   padding-bottom: 75px;
 }
+.sign__email input[type=email] {
+  width: 450px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: transparent;
+  padding-left: 26px;
+}
 
 body {
   font-weight: 400;
