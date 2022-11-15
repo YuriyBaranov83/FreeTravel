@@ -771,7 +771,11 @@
 }
 .about__description {
   max-width: 537px;
-  order: -1;
+}
+@media screen and (max-width: 768px) {
+  .about__description {
+    order: -1;
+  }
 }
 
 .description {
