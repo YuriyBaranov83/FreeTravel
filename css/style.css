@@ -755,6 +755,7 @@
 .about {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .about {
@@ -781,6 +782,21 @@
 .description {
   padding-top: 105px;
   padding-bottom: 105px;
+}
+.description::before {
+  content: "";
+  width: 67px;
+  height: 8px;
+  background: linear-gradient(159.99deg, #FFD482 13.35%, #FFBE82 118.92%);
+  box-shadow: 0px 2px 6px rgba(229, 137, 24, 0.15);
+  border-radius: 4px;
+  position: absolute;
+  top: 85px;
+}
+@media screen and (max-width: 768px) {
+  .description::before {
+    top: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .description {
