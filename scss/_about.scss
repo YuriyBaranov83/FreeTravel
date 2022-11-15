@@ -2,23 +2,35 @@
 
    &__about {
       margin-top: 37px;
+      @media screen and (max-width :768px){
+         margin-top: 0px;
+      }
    }
 }
 .about {
    display: flex;
    justify-content: space-between;
+   @media screen and (max-width :768px){
+      flex-direction: column;
+   }
    &__img {
       padding: 66px 0px 66px 68px;
+      @media screen and (max-width :768px){
+         padding: 0px 122px;
+      }
    }
 
    &__description {
       max-width: 537px;
-      
+      order: -1;
    }
 }
 .description {
    padding-top: 105px;
    padding-bottom: 105px;
+   @media screen and (max-width :768px){
+      padding: 15px;
+   }
    &__title {
       font-weight: 600;
       font-size: 56px;
