@@ -46,7 +46,14 @@
    &__items {
       &:not(:first-child){
          margin-left: 113px;
-         
+         @media screen and (max-width :768px){
+            margin-left: 40px;
+         }
+      }
+      &:last-child{
+         @media screen and (max-width :768px){
+           padding-right: 15px;
+         }
       }
    }
 
@@ -66,5 +73,9 @@
       font-size: 14px;
       line-height: 34px;
       color: #676A6C;
+      @media screen and (max-width :768px){
+         font-size: 16px;
+         
+       }
    }
 }
