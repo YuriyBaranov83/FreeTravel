@@ -1,0 +1,28 @@
+.sign {
+   background-color: #FFD482;
+   border-radius: 30px;
+   background-image: url(/img/sign/Intersect.png);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 0.0015em;
+      color: #2D3134;
+      padding-top: 75px;
+   }
+
+   &__text {
+      line-height: 26px;
+      text-align: center;
+      margin-top: 16px;
+      max-width: 415px;
+   }
+
+   &__email {
+      margin-top: 40px;
+      padding-bottom: 75px;
+   }
+}
