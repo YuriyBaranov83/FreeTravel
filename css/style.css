@@ -938,6 +938,32 @@
   stroke: #F66F4D;
 }
 
+.footer__navigation {
+  display: flex;
+}
+
+.navigation {
+  padding-top: 84px;
+}
+.navigation__items:not(:first-child) {
+  margin-left: 113px;
+}
+.navigation__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2D3134;
+}
+.navigation__list {
+  margin-top: 22px;
+}
+.navigation__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 34px;
+  color: #676A6C;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
