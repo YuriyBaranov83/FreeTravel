@@ -695,10 +695,9 @@
   color: #FFFFFF;
 }
 
-.top__images-cards {
+.images-cards__card {
   position: relative;
 }
-
 .images-cards__title {
   position: absolute;
   left: 24px;
