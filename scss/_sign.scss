@@ -29,19 +29,27 @@
    }
 
    &__email {
+      position: relative;
       margin-top: 40px;
       padding-bottom: 75px;
       @media screen and (max-width :768px){
          margin-top: 10px;
          padding-bottom: 25px;
       }
+      & svg{
+         position: absolute;
+         right:0;
+         padding-top: 3px;
+      }
       & input[type="email"]{
+         position: relative;
          width: 450px;
          height: 60px;
          background: #FFFFFF;
          border-radius: 12px;
          border: transparent;
          padding-left: 26px;
+        
       }
    }
 }
