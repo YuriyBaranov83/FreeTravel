@@ -50,27 +50,41 @@
 .top {
 
    &__images-cards {
-      
+     margin-top: 51px; 
    }
 }
 .images-cards {
    display: grid;
-      gap: 30px;
-      grid-template-columns:repeat(auto-fit, minmax(170px, 1fr)) ;
-      
+   grid-template-columns: repeat(5, auto);
+   grid-template-rows: repeat(2, auto);
+   justify-content: space-between;
+   justify-items: center;
+   align-items: end;
+   grid-template-areas: 
+      "image1 image2 image2 image3 image3"
+      "image4 image2 image2 image5 image6";
+
    &__card {
       position: relative;
-      padding: 0px 0px 85% 0px;
-      
-      
-      & img{
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         top: 0;
-         left: 0;
-         object-fit: cover;
+      &_first{
+         grid-area: image1;
       }
+      &_second{
+         grid-area: image2;
+      }
+      &_third{
+         grid-area: image3;
+      }
+      &_forth{
+         grid-area: image4;
+      }
+      &_fifth{
+         grid-area: image5;
+      }
+      &_sixth{
+         grid-area: image6;
+      }
+      
    }
 
    &__title {
