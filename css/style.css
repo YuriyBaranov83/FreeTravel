@@ -708,8 +708,22 @@
   align-items: end;
   grid-template-areas: "image1 image2 image2 image3 image3" "image4 image2 image2 image5 image6";
 }
+@media screen and (max-width: 768px) {
+  .images-cards {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+    grid-template-areas: "image1 image2 image3" "image4 image5 image6";
+  }
+}
 .images-cards__card {
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .images-cards__card img {
+    width: 240px;
+    height: 240px;
+  }
 }
 .images-cards__card_first {
   grid-area: image1;

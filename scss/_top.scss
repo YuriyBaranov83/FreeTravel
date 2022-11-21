@@ -63,9 +63,24 @@
    grid-template-areas: 
       "image1 image2 image2 image3 image3"
       "image4 image2 image2 image5 image6";
-
+   
+      @media screen and (max-width :768px){
+         grid-template-columns: repeat(3, auto);
+         grid-template-rows: repeat(2, auto);
+         justify-content: space-around;
+         grid-template-areas: 
+            "image1 image2 image3"
+            "image4 image5 image6";
+   }
+   
    &__card {
       position: relative;
+      & img {
+         @media screen and (max-width :768px){
+            width: 240px;
+            height: 240px;
+         }
+      }
       &_first{
          grid-area: image1;
       }
