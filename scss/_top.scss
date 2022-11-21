@@ -47,3 +47,46 @@
    }
 }
 
+.top {
+
+   &__images-cards {
+      position: relative;
+   }
+}
+.images-cards {
+
+   &__card {
+   }
+
+   &__title {
+      position: absolute;
+      left: 24px;
+      bottom: 48px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: #FFFFFF;
+   }
+
+   &__subtitle {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #FFFFFF;
+
+   }
+
+   &__score {
+      position: absolute;
+      top: 16px;
+      left: 24px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 5px 10px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #2D3134;
+   }
+}
