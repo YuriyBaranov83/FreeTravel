@@ -533,18 +533,8 @@
   line-height: 46px;
   color: #F66F4D;
   padding-top: 30px;
-}
-.blocks__count:nth-child(1) {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.blocks__count:nth-child(2) {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.blocks__count:nth-child(3) {
-  padding-left: 25px;
-  padding-right: 25px;
+  min-width: 166px;
+  text-align: center;
 }
 .blocks__text {
   font-size: 21px;
