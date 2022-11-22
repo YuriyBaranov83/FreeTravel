@@ -1,10 +1,11 @@
 .sign {
-   background-color: #FFD482;
+   // background-color: #FFD482;
    border-radius: 30px;
-   background-image: url(/img/sign/Intersect.png);
+   // background-image: url(img/sign/Intersect.png);
    display: flex;
    flex-direction: column;
    align-items: center;
+   background: #FFD482 url(../img/sign/Intersect.png) no-repeat;
    @media screen and (max-width :768px){
       max-width: 700px;
       margin-top: 10px;
