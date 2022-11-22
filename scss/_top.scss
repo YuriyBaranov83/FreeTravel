@@ -75,7 +75,17 @@
    
    &__card {
       position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      &:hover img{
+         transform: scale(1.2);
+         // filter: grayscale(0%);
+         opacity: 1;
+      }
       & img {
+         // filter: grayscale(100%);
+         opacity: 0.5;
+         transition: all 0.5s linear;
          @media screen and (max-width :768px){
             width: 240px;
             height: 240px;
