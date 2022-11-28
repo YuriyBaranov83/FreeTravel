@@ -11,23 +11,7 @@
       align-items: center;
    }
 
-   &__button {
-      display: flex;
-      margin-left: 357px;
-      font-family: 'Poppins';
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px;
-      border: 1.4px solid #F66F4D;
-      border-radius: 27px;
-      background-color: #FAF8ED;
-      color: #F66F4D;
-      text-align: center;
-      padding: 19px 34px;
-      & svg{
-         margin-left: 6px;
-      }
-   }
+  
    &__mobile{
       display: none;
       margin-left: 25px;

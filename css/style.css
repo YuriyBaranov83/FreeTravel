@@ -13,23 +13,6 @@
   display: flex;
   align-items: center;
 }
-.header__button {
-  display: flex;
-  margin-left: 357px;
-  font-family: "Poppins";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  border: 1.4px solid #F66F4D;
-  border-radius: 27px;
-  background-color: #FAF8ED;
-  color: #F66F4D;
-  text-align: center;
-  padding: 19px 34px;
-}
-.header__button svg {
-  margin-left: 6px;
-}
 .header__mobile {
   display: none;
   margin-left: 25px;
