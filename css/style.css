@@ -8,10 +8,23 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .header__menu {
   display: flex;
   align-items: center;
+}
+.header__linktg {
+  text-decoration: none;
+  border: 1.4px solid #F66F4D;
+  border-radius: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F66F4D;
+  padding: 19px 34px;
 }
 .header__mobile {
   display: none;
