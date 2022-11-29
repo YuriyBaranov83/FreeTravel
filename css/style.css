@@ -26,6 +26,11 @@
   color: #F66F4D;
   padding: 19px 34px;
 }
+@media screen and (max-width: 768px) {
+  .header__linktg {
+    margin-right: 130px;
+  }
+}
 .header__mobile {
   display: none;
   margin-left: 25px;
