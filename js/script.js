@@ -1,3 +1,9 @@
 $(document).ready (function () {
-   $('.cards').slick();
+   $('.cards').slick({
+      infinite: true,
+      slidesToShow : 6
+      
+   }
+
+   );
 });

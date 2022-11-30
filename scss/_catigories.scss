@@ -51,13 +51,17 @@
       position: absolute;
       top: 0;
       font-size: 0;
+      width: 54px;
+      height: 54px;
 
    }
    & .slick-arrow.slick-prev{
-      background: url('img/catigories/arrowleft.svg') 0 0 no-repeat;
+      background: url('../img/catigories/arrowleft.svg')  no-repeat;
+      right: 50px;
    }
    & .slick-arrow.slick-next{
-
+      background: url('../img/catigories/arrowright.svg') no-repeat;
+      right: 0;
    }
    &__name {
       margin-top: 18px;
