@@ -1,5 +1,6 @@
 .catigories {
    margin-top: 100px;
+   position: relative;
    @media screen and (max-width :768px){
       margin-top: 35px;
    }
@@ -36,14 +37,8 @@
    }
 }
 .cards {
-   
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+  
    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       &:hover .cards__visite{
          visibility: visible;
       }
@@ -52,7 +47,18 @@
          margin-top: 30px;
        }
    }
+   & .slick-arrow{
+      position: absolute;
+      top: 0;
+      font-size: 0;
 
+   }
+   & .slick-arrow.slick-prev{
+      background: url('img/catigories/Arrow\ left.svg');
+   }
+   & .slick-arrow.slick-next{
+
+   }
    &__name {
       margin-top: 18px;
       font-weight: 500;
@@ -72,3 +78,18 @@
       visibility: hidden;
    }
 }
+.slick-track{
+   display: flex;
+}
+.slick-list{
+   overflow: hidden;
+}
+.slick-initialized {}
+.slick-slider{}
+.slick-prev{} 
+.slick-arrow{}
+.slick-slide{} 
+.slick-current{}
+.slick-active{}
+.slick-next{}
+.slick-prev{}
