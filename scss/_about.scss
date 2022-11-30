@@ -104,22 +104,61 @@
 .customer {
 
    &__form {
+     margin-top: 27px;
    }
 }
 .form {
    position: relative;
    display: inline-block;
-   font-size: 40px;
+   font-size: 30px;
    &::before{
       content: '★★★★★';
       display: block;
    }
    &__items {
+      position: absolute;
+      width:100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      overflow: hidden;
+      background-color: #FFFFFF;
+      padding-left: 30px;
+      color: lightgray;
    }
 
    &__item {
+      position: absolute;
+      width: 0%;
+      height: 0%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      
+      &:checked,
+      &:checked ~ .form__label{
+         color: #FFC14B;;
+      }
+      
    }
 
    &__label {
+      flex: 0 0 20%;
+      height: 100%;
+      cursor: pointer;
+      &::before{
+         content: '★';
+         display: block;
+         transition: color 0.3s ease 0s;
+      }
+      &:hover, 
+      &:hover ~ .form__label,
+      &:checked ~ .form__label:hover{
+         color: #FFC14B;
+         opacity: 0.5;
+      }
    }
 }
