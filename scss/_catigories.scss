@@ -37,7 +37,7 @@
    }
 }
 .cards {
-  
+   margin-top: 60px;
    &__item {
       &:hover .cards__visite{
          visibility: visible;
@@ -53,15 +53,30 @@
       font-size: 0;
       width: 54px;
       height: 54px;
+      border: 0;
+      cursor: pointer;
+      margin-top: 18px;
 
    }
    & .slick-arrow.slick-prev{
       background: url('../img/catigories/arrowleft.svg')  no-repeat;
-      right: 50px;
+      right: 110px;
+      &:hover{
+         background: url('../img/catigories/arrowright.svg')  no-repeat;
+         transform: rotate(180deg);
+         transition: 0.3s;
+      }
    }
    & .slick-arrow.slick-next{
-      background: url('../img/catigories/arrowright.svg') no-repeat;
-      right: 0;
+      background: url('../img/catigories/arrowleft.svg') no-repeat;
+      right: 35px;
+      transform: rotate(180deg);
+      &:hover{
+         background: url('../img/catigories/arrowright.svg')  no-repeat;
+         transform: none;
+         transition: 0.3s;
+      }
+
    }
    &__name {
       margin-top: 18px;
@@ -69,6 +84,7 @@
       font-size: 26px;
       line-height: 26px;
       color: #2D3134;
+      text-align: center;
    }
 
    &__visite {
@@ -78,8 +94,9 @@
       text-align: center;
       color: #FFFFFF;
       position: absolute;
-      padding: 104px 57px;
       visibility: hidden;
+      top: 104px;
+      padding-left: 55px;
    }
 }
 .slick-track{
