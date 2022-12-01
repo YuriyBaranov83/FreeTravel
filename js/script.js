@@ -8,8 +8,8 @@ $(document).ready (function () {
 
 $(document).ready (function () {
    $('.places').slick({
-      // infinite: true,
-      slidesToShow : 1
+      infinite: true,
+      slidesToShow : 3
    }
    );
 });

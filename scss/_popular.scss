@@ -5,7 +5,7 @@
    }
 }
 .popular {
-
+   position: relative;
    &__title {
       display: flex;
       justify-content: space-between;
@@ -24,31 +24,38 @@
          margin-left: 170px;
       }
    }
-
-   &__arrows {
-      & svg{
-         margin-left: 15px;
-      }
-      @media screen and (max-width :768px){
-         display: none;
-      }
-   }
 }
 
 
 .places {
    margin-top: 35px;
-   position: relative;
-   @media screen and (max-width :768px){
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-   }
    & .slick-arrow{
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 39px;
       cursor: pointer;
+      font-size: 0;
+      width: 54px;
+      height: 54px;
+      border: 0;
+   } 
+   & .slick-arrow.slick-next{
+      background: url('../img/catigories/arrowleft.svg')  no-repeat;
+      right: 35px;
+      transform: rotate(180deg);
+      &:hover{
+         background: url('../img/catigories/arrowright.svg')  no-repeat;
+         transform: none;
+         transition: 0.3s;
+      }
+   }
+   & .slick-arrow.slick-prev{
+      background: url('../img/catigories/arrowleft.svg')  no-repeat;
+      right: 110px;
+      &:hover{
+         background: url('../img/catigories/arrowright.svg')  no-repeat;
+         transform: rotate(180deg);
+         transition: 0.3s;
+      }
    }
    &__item{
       background: #FAF8ED;
