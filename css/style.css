@@ -848,6 +848,36 @@
 .description {
   padding-top: 105px;
   padding-bottom: 105px;
+  position: relative;
+}
+.description .slick-arrow {
+  position: absolute;
+  bottom: 140px;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+.description .slick-arrow.slick-prev {
+  background: url("../img/about/left.svg") no-repeat;
+  right: 90px;
+}
+.description .slick-arrow.slick-prev:hover {
+  background: url("../img/about/right.svg") no-repeat;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.description .slick-arrow.slick-next {
+  background: url("../img/about/left.svg") no-repeat;
+  right: 30px;
+  transform: rotate(180deg);
+}
+.description .slick-arrow.slick-next:hover {
+  background: url("../img/about/right.svg") no-repeat;
+  transform: none;
+  transition: 0.3s;
 }
 .description::before {
   content: "";
@@ -875,6 +905,8 @@
   line-height: 66px;
   text-transform: capitalize;
   color: #2D3134;
+  background-color: #FAF8ED;
+  padding-left: 30px;
 }
 .description__customer {
   margin-top: 26px;
@@ -882,9 +914,6 @@
   border-radius: 14px;
 }
 
-.customer {
-  position: relative;
-}
 .customer__form {
   margin-top: 27px;
 }
@@ -960,6 +989,14 @@
 .form__label:hover, .form__label:hover ~ .form__label, .form__label:checked ~ .form__label:hover {
   color: #FFC14B;
   opacity: 0.5;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
 }
 
 .sign {
