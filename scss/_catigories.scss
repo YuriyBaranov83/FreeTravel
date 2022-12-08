@@ -99,14 +99,21 @@
 }
 // .slick-initialized {}
 // .slick-slider{}
-// .slick-prev{} 
 .slick-arrow{
    @media screen and (max-width :768px){
-      padding-right: 100px;
+      margin-right : 80px;
    }
-}
+ }
 // .slick-slide{} 
 // .slick-current{}
 // .slick-active{}
-// .slick-next{}
-// .slick-prev{}
+// .slick-next{
+//    @media screen and (max-width :768px){
+//       right: 100px;
+//    }
+// }
+// .slick-prev{
+//    @media screen and (max-width :768px){
+//       right: 140px;
+//    }
+// }

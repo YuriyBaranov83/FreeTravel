@@ -381,7 +381,7 @@
 
 @media screen and (max-width: 768px) {
   .slick-arrow {
-    padding-right: 100px;
+    margin-right: 80px;
   }
 }
 
