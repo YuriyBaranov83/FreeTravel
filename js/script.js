@@ -17,7 +17,15 @@ $(document).ready (function () {
 $(document).ready (function () {
    $('.places').slick({
       infinite: true,
-      slidesToShow : 3
+      slidesToShow : 3,
+      responsive:[
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow : 2,
+            }
+         }
+      ]
    }
    );
 });

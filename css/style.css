@@ -596,12 +596,6 @@
   color: #2D3134;
   max-width: 400px;
 }
-@media screen and (max-width: 768px) {
-  .popular__text {
-    text-align: center;
-    margin-left: 170px;
-  }
-}
 
 .places {
   margin-top: 35px;
