@@ -22,15 +22,12 @@
       line-height: 16px;
       color: #F66F4D;
       padding: 19px 34px;
-      @media screen and (max-width :768px){
-         margin-right: 130px;
-      }
    }
   
    &__mobile{
       display: none;
       margin-left: 25px;
-      @media screen and (max-width :768px){
+      @media screen and (max-width :900px){
          display: block;
          margin-left: 25px;
          & svg path{
@@ -43,7 +40,7 @@
    &__list {
       display: flex;
       margin-left: 72px;
-      @media screen and (max-width :768px){
+      @media screen and (max-width :900px){
          display: none;
       }
    }

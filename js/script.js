@@ -4,11 +4,35 @@ $(document).ready (function () {
       slidesToShow : 6,
       responsive:[
          {
+            breakpoint: 1200,
+            settings: {
+               slidesToShow : 5,
+            }
+         },
+         {
+            breakpoint: 950,
+            settings: {
+               slidesToShow : 4,
+            }
+         },
+         {
             breakpoint: 768,
             settings: {
                slidesToShow : 3,
             }
-         }
+         },
+         {
+            breakpoint: 600,
+            settings: {
+               slidesToShow : 2,
+            }
+         },
+         {
+            breakpoint: 425,
+            settings: {
+               slidesToShow : 1,
+            }
+         },
       ]
    }
    );
