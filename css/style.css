@@ -323,7 +323,8 @@
 }
 @media screen and (max-width: 768px) {
   .cards__item {
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
   }
 }
@@ -636,6 +637,12 @@
 }
 .places__img {
   padding: 12px 12px 0 12px;
+}
+@media screen and (max-width: 768px) {
+  .places__img {
+    padding: 0;
+    width: 300px;
+  }
 }
 .places__title {
   font-weight: 600;
