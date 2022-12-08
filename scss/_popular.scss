@@ -20,11 +20,26 @@
       text-transform: capitalize;
       color: #2D3134;
       max-width: 400px;
+      @media screen and (max-width :768px){
+        max-width: 100%;
+        text-align: center;
+        margin-left: 15px;
+      }
    }
 }
 
 .places {
    margin-top: 35px;
+   @media screen and(max-width:1220px) {
+      margin-top: 5px;
+   }
+   & img{ 
+      @media screen and (max-width :1220px){
+         width: 100%;
+         max-height: 300px;
+         
+      }
+   }
    & .slick-arrow{
       position: absolute;
       top: 39px;
@@ -33,6 +48,10 @@
       width: 54px;
       height: 54px;
       border: 0;
+      @media screen and (max-width :768px){
+         display: none!important;
+      }
+      
    } 
    
    & .slick-arrow.slick-next{
@@ -61,22 +80,11 @@
       border: 2px solid #FFFFFF;
       box-shadow: 0px 24px 90px rgba(192, 188, 161, 0.22);
       border-radius: 16px;
-      @media screen and (max-width :768px){
-       width: 270px;
-       height: 390px;
-      }
+      margin: 0 15px;
    }
 
    &__img{
       padding: 12px 12px 0 12px;
-      
-      & img{ 
-         @media screen and (max-width :768px){
-         width: 270px;
-         height: 200px;
-         }
-      }
-      
    }
   
    &__title {
@@ -99,9 +107,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 27px 24px 36px 24px;
-      @media screen and (max-width :768px){
-         justify-content: start;
-      }
+      // @media screen and (max-width :768px){
+      //    justify-content: start;
+      // }
    }
 
    &__prise {
@@ -122,9 +130,9 @@
          background: #2D3134;
          color: #FFFFFF;
       }
-      @media screen and (max-width :768px){
-         margin-left: 10px;
-      }
+      // @media screen and (max-width :768px){
+      //    margin-left: 10px;
+      // }
    }
 }
 // .slick-initialized {}

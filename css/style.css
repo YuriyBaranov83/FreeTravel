@@ -710,9 +710,27 @@
   color: #2D3134;
   max-width: 400px;
 }
+@media screen and (max-width: 768px) {
+  .popular__text {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 15px;
+  }
+}
 
 .places {
   margin-top: 35px;
+}
+@media screen and (max-width: 1220px) {
+  .places {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .places img {
+    width: 100%;
+    max-height: 300px;
+  }
 }
 .places .slick-arrow {
   position: absolute;
@@ -722,6 +740,11 @@
   width: 54px;
   height: 54px;
   border: 0;
+}
+@media screen and (max-width: 768px) {
+  .places .slick-arrow {
+    display: none !important;
+  }
 }
 .places .slick-arrow.slick-next {
   background: url("../img/catigories/arrowleft.svg") no-repeat;
@@ -747,21 +770,10 @@
   border: 2px solid #FFFFFF;
   box-shadow: 0px 24px 90px rgba(192, 188, 161, 0.22);
   border-radius: 16px;
-}
-@media screen and (max-width: 768px) {
-  .places__item {
-    width: 270px;
-    height: 390px;
-  }
+  margin: 0 15px;
 }
 .places__img {
   padding: 12px 12px 0 12px;
-}
-@media screen and (max-width: 768px) {
-  .places__img img {
-    width: 270px;
-    height: 200px;
-  }
 }
 .places__title {
   font-weight: 600;
@@ -782,11 +794,6 @@
   align-items: center;
   padding: 27px 24px 36px 24px;
 }
-@media screen and (max-width: 768px) {
-  .places__prices {
-    justify-content: start;
-  }
-}
 .places__prise {
   font-weight: 600;
   font-size: 24px;
@@ -804,11 +811,6 @@
 .places__button:hover {
   background: #2D3134;
   color: #FFFFFF;
-}
-@media screen and (max-width: 768px) {
-  .places__button {
-    margin-left: 10px;
-  }
 }
 
 .main__top {

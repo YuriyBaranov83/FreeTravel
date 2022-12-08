@@ -44,9 +44,15 @@ $(document).ready (function () {
       slidesToShow : 3,
       responsive:[
          {
-            breakpoint: 768,
+            breakpoint: 1220,
             settings: {
                slidesToShow : 2,
+            }
+         },
+         {
+            breakpoint: 800,
+            settings: {
+               slidesToShow : 1,
             }
          }
       ]
