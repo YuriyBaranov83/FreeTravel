@@ -428,7 +428,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .stories {
     display: block;
   }
@@ -444,6 +444,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.images__main img {
+  max-width: 100%;
+}
 
 .dest {
   display: flex;
@@ -456,12 +459,37 @@
   top: 257px;
   left: -50px;
 }
+@media screen and (max-width: 1310px) {
+  .dest {
+    left: 0;
+    width: 100px;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dest {
+    width: 90px;
+  }
+}
 .dest__svg {
   background: linear-gradient(165.91deg, #FFECC9 10.03%, #FFD482 139.08%);
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .dest__svg {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dest__svg svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 .dest__persent {
   font-family: "Poppins";
@@ -472,12 +500,23 @@
   color: #F66F4D;
   margin-top: 30px;
 }
+@media screen and (max-width: 1000px) {
+  .dest__persent {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
 .dest__text {
   font-size: 19px;
   line-height: 30px;
   color: #939597;
   margin-top: 8px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 1310px) {
+  .dest__text {
+    font-size: 14px;
+  }
 }
 
 .cust {
@@ -489,6 +528,12 @@
   right: 16px;
   bottom: 32px;
 }
+@media screen and (max-width: 1310px) {
+  .cust {
+    right: 5%;
+    bottom: 33%;
+  }
+}
 .cust__amount {
   font-family: "Poppins";
   font-style: normal;
@@ -497,6 +542,13 @@
   line-height: 30px;
   color: #2D3134;
   padding: 20px 21px 0px 16px;
+}
+@media screen and (max-width: 1000px) {
+  .cust__amount {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 5px 0px 0px 18px;
+  }
 }
 .cust__amount svg {
   margin-right: 12px;
@@ -517,10 +569,10 @@
   max-width: 538px;
   margin-top: 110px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .info {
-    margin-top: 10px;
-    max-width: 604px;
+    margin-top: 0;
+    margin-left: 10px;
   }
 }
 .info__exp {
