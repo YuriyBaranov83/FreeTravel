@@ -1,7 +1,15 @@
 $(document).ready (function () {
    $('.cards').slick({
       infinite: true,
-      slidesToShow : 6
+      slidesToShow : 6,
+      responsive:[
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow : 3,
+            }
+         }
+      ]
    }
    );
 });

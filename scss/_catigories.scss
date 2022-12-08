@@ -30,13 +30,16 @@
 }
 .cards {
    margin-top: 60px;
+   @media screen and (max-width :768px){
+      margin-top: 5px;
+   }
    &__item {
       &:hover .cards__visite{
          visibility: visible;
       }
       @media screen and (max-width :768px){
-         margin-left: 51px;
-         margin-top: 30px;
+         margin-left: 40px;
+         margin-top: 10px;
        }
    }
    & .slick-arrow{

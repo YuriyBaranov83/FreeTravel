@@ -313,13 +313,18 @@
 .cards {
   margin-top: 60px;
 }
+@media screen and (max-width: 768px) {
+  .cards {
+    margin-top: 5px;
+  }
+}
 .cards__item:hover .cards__visite {
   visibility: visible;
 }
 @media screen and (max-width: 768px) {
   .cards__item {
-    margin-left: 51px;
-    margin-top: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
   }
 }
 .cards .slick-arrow {
