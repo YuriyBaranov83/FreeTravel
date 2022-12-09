@@ -1122,8 +1122,7 @@
 }
 @media screen and (max-width: 768px) {
   .description .slick-arrow {
-    z-index: 0;
-    display: none;
+    display: none !important;
   }
 }
 .description .slick-arrow.slick-prev {
