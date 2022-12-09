@@ -824,6 +824,11 @@
 .main__top {
   margin-top: 36px;
 }
+@media screen and (max-width: 768px) {
+  .main__top {
+    margin-top: 5px;
+  }
+}
 
 .top__title {
   display: flex;
@@ -836,12 +841,30 @@
   line-height: 66px;
   color: #2D3134;
 }
+@media screen and (max-width: 500px) {
+  .top__maintitle {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 .top__subtitle {
   line-height: 16px;
   margin-top: 16px;
 }
+@media screen and (max-width: 500px) {
+  .top__subtitle {
+    text-align: center;
+  }
+}
 .top__buttons {
   margin-top: 28px;
+}
+@media screen and (max-width: 630px) {
+  .top__buttons {
+    text-align: center;
+    margin: 0;
+  }
 }
 .top__buttons button {
   border: 1px solid #3D3D3D;
@@ -856,13 +879,28 @@
 .top__buttons button:not(:first-child) {
   margin-left: 14px;
 }
+@media screen and (max-width: 630px) {
+  .top__buttons button:not(:first-child) {
+    margin-left: 5px;
+  }
+}
 .top__buttons button:hover {
   background: #2D3134;
   color: #FFFFFF;
 }
+@media screen and (max-width: 630px) {
+  .top__buttons button {
+    margin-top: 10px;
+  }
+}
 
 .top__images-cards {
   margin-top: 51px;
+}
+@media screen and (max-width: 768px) {
+  .top__images-cards {
+    margin-top: 10px;
+  }
 }
 
 .images-cards {
@@ -874,12 +912,20 @@
   align-items: end;
   grid-template-areas: "image1 image2 image2 image3 image3" "image4 image2 image2 image5 image6";
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
   .images-cards {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
     grid-template-areas: "image1 image2 image3" "image4 image5 image6";
+  }
+}
+@media screen and (max-width: 768px) {
+  .images-cards {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-around;
+    grid-template-areas: "image1 image2 " "image4 image5 " "image3 image6";
   }
 }
 .images-cards__card {
@@ -895,10 +941,35 @@
   opacity: 0.5;
   transition: all 0.5s linear;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1230px) {
   .images-cards__card img {
     width: 240px;
     height: 240px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .images-cards__card img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .images-cards__card img {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .images-cards__card img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .images-cards__card img {
+    width: 120px;
+    height: 120px;
   }
 }
 .images-cards__card_first {

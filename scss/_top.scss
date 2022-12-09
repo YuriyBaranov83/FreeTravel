@@ -2,6 +2,9 @@
 
    &__top {
       margin-top: 36px;
+      @media screen and (max-width :768px){
+         margin-top: 5px;
+      }
    }
 }
 .top {
@@ -18,15 +21,27 @@
       font-size: 56px;
       line-height: 66px;
       color: #2D3134;
+      @media screen and (max-width :500px){
+         text-align: center;
+         font-size: 40px;
+         line-height: 40px;
+      }
    }
 
    &__subtitle {
       line-height: 16px;
       margin-top: 16px;
+      @media screen and (max-width :500px){
+         text-align: center;
+      }
    }
 
    &__buttons {
       margin-top: 28px;
+      @media screen and (max-width :630px){
+         text-align: center;
+         margin: 0;
+      }
       & button{
          border: 1px solid #3D3D3D;
          border-radius: 30px;
@@ -38,10 +53,16 @@
          padding: 10px 20px;
          &:not(:first-child){
             margin-left: 14px;
+            @media screen and (max-width :630px){
+               margin-left: 5px;         
+            }
          }
          &:hover{
             background: #2D3134;
             color: #FFFFFF;
+         }
+         @media screen and (max-width :630px){
+            margin-top: 10px;
          }
       }
    }
@@ -51,7 +72,11 @@
 
    &__images-cards {
      margin-top: 51px; 
+      @media screen and (max-width :768px){
+         margin-top: 10px;
+      }
    }
+   
 }
 .images-cards {
    display: grid;
@@ -64,14 +89,23 @@
       "image1 image2 image2 image3 image3"
       "image4 image2 image2 image5 image6";
    
-      @media screen and (max-width :768px){
+      @media screen and (max-width :1230px){
          grid-template-columns: repeat(3, auto);
          grid-template-rows: repeat(2, auto);
          justify-content: space-around;
          grid-template-areas: 
             "image1 image2 image3"
             "image4 image5 image6";
-   }
+      }
+      @media screen and (max-width :768px){
+         grid-template-columns: repeat(2, auto);
+         grid-template-rows: repeat(3, auto);
+         justify-content: space-around;
+         grid-template-areas: 
+         "image1 image2 "
+         "image4 image5 "
+         "image3 image6";
+      }
    
    &__card {
       position: relative;
@@ -86,9 +120,26 @@
          // filter: grayscale(100%);
          opacity: 0.5;
          transition: all 0.5s linear;
-         @media screen and (max-width :768px){
+         @media screen and (max-width :1230px){
             width: 240px;
             height: 240px;
+            margin-top: 10px;
+         }
+         @media screen and (max-width :540px){
+            width: 200px;
+            height: 200px;
+         }
+         @media screen and (max-width :450px){
+            width: 170px;
+            height: 170px;
+         }
+         @media screen and (max-width :380px){
+            width: 150px;
+            height: 150px;
+         }
+         @media screen and (max-width :340px){
+            width: 120px;
+            height: 120px;
          }
       }
       &_first{
