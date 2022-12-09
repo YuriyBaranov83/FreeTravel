@@ -242,6 +242,12 @@
   top: 43px;
   left: 39px;
 }
+@media screen and (max-width: 520px) {
+  .images__mapsvg {
+    top: 20px;
+    left: 20px;
+  }
+}
 .images__globesvg {
   position: absolute;
   right: 0;
@@ -250,6 +256,12 @@
 @media screen and (max-width: 768px) {
   .images__globesvg {
     right: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .images__globesvg {
+    top: 30px;
+    right: 20px;
   }
 }
 .images__text {

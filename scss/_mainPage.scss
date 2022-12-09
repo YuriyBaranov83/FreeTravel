@@ -138,6 +138,10 @@
       position: absolute;
       top: 43px;
       left: 39px;
+      @media screen and (max-width :520px){
+         top:20px;
+         left:20px;
+      }
    }
    &__globesvg{
       position: absolute;
@@ -145,6 +149,10 @@
       top: 105px;
       @media screen and (max-width :768px){
          right: 10px;
+      }
+      @media screen and (max-width :520px){
+         top:30px;
+         right: 20px;
       }
    }
    &__text{
