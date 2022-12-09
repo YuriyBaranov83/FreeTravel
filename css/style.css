@@ -717,6 +717,12 @@
     margin-left: 15px;
   }
 }
+@media screen and (max-width: 360px) {
+  .popular__text {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
 
 .places {
   margin-top: 35px;
