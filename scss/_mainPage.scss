@@ -52,16 +52,29 @@
       padding-top: 20px;
       padding-bottom: 18px;
       padding-left: 28px;
+      @media screen and (max-width :450px){
+         padding: 10px 0 9px 14px;
+      }
       
    }
    &__date {
       padding-top: 20px;
       padding-bottom: 18px;
+      @media screen and (max-width :450px){
+         padding: 10px 0 9px 0;
+      }
    }
    &__icon{
       position: absolute;
       right: 4%;
       top: 11%;
+      & svg{
+         @media screen and (max-width :450px){
+            width: 35px;
+            height: 35px;
+            padding-top: 2px;
+         }
+      }
    }
 }
 .where {
@@ -82,6 +95,9 @@
    display: flex;
    flex-direction: column;
    margin-left: 68px;
+   @media screen and (max-width :450px){
+      margin-left: 28px;
+    }
    &::before{
       content: '';
       width: 47px;
@@ -91,6 +107,11 @@
       position: absolute;
       left: 150px;
       top: 35px;
+      @media screen and (max-width :450px){
+        width: 37px;
+        top: 20px;
+        left:120px;
+      }
       
    }
    &__title {
