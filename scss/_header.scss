@@ -37,6 +37,9 @@
             fill: #F66F4D;
          }
       }
+      @media screen and (max-width :400px){
+         margin-left: 10px;
+      }
    }
 }
 .menu {
