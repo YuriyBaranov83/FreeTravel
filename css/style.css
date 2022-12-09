@@ -1310,6 +1310,14 @@
     padding-top: 25px;
   }
 }
+@media screen and (max-width: 550px) {
+  .sign__title {
+    padding-top: 15px;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
 .sign__text {
   line-height: 26px;
   text-align: center;
@@ -1340,6 +1348,11 @@
   border-radius: 12px;
   border: transparent;
   padding-left: 26px;
+}
+@media screen and (max-width: 768px) {
+  .sign__email input[type=email] {
+    width: 240px;
+  }
 }
 .sign__email input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(0, 0, 0, 0.2);

@@ -1,7 +1,5 @@
 .sign {
-   // background-color: #FFD482;
    border-radius: 30px;
-   // background-image: url(img/sign/Intersect.png);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -19,6 +17,12 @@
       padding-top: 75px;
       @media screen and (max-width :768px){
          padding-top: 25px;
+      }
+      @media screen and (max-width :550px){
+         padding-top: 15px;
+         font-size: 30px;
+         line-height: 32px;
+         text-align: center;
       }
    }
 
@@ -50,6 +54,9 @@
          border-radius: 12px;
          border: transparent;
          padding-left: 26px;
+         @media screen and (max-width :768px){
+            width: 240px;
+         }
          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             color: rgba(0, 0, 0, 0.2);
           }
