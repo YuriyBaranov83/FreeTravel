@@ -22,6 +22,9 @@
       line-height: 16px;
       color: #F66F4D;
       padding: 19px 34px;
+      @media screen and (max-width :400px){
+         padding: 10px 17px;
+      }
    }
   
    &__mobile{
